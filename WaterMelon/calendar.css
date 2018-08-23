@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+#calendar_table {
+   background-color: rgb(231, 231, 231);  
+   font-size: 1.2em;
+   font-family: 'Special Elite', cursive;
+   width: 100%;
+   color: white;
+   box-shadow: rgb(51, 51, 51) 0px 0px 1px,
+               rgb(51, 51, 51) 0px 0px 5px, 
+               rgb(51, 51, 51) 0px 0px 10px,
+               rgb(51, 51, 51) 0px 0px 20px; 
+   margin-top: 60px;         
+}
+
+#calendar_table caption {
+   caption-side: top; 
+   text-align: center;
+   padding-bottom: 20px; 
+   font-size: 2em; 
+   letter-spacing: 0.3em;
+   font-family: 'Wendy One', sans-serif;
+   color: lightgreen;
+   text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: mcmove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mimove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mcmove {
+    50% {text-shadow: 10px 20px 30px blue;}
+}
+
+/* Standard syntax */
+@keyframes mcmove {
+    50% {text-shadow: 10px 20px 30px blue;}
+}
+
+
+.calendar_weekdays {
+   background-color: yellowgreen;
+   width: 14.28%; 
+   font-size: 1em; 
+   border-bottom: 3px red;
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 0.8em;
+   padding: 3px;
+   border: 1px dotted yellowgreen;
+   background-color: pink;
+   height: 60px;
+}
+
+#calendar_today {
+   font-weight: bold; 
+   color: rgb(51, 51, 51);
+   background-color: yellowgreen;
+   border: 1px solid black;
+}
+
+@media screen and (max-width: 480px) {
+   #calendar_table {
+      width: 4px;
+      padding: auto;
+      margin: auto;
+   }
+}
+
